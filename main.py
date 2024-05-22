@@ -18,18 +18,28 @@ while True:
 
     op = input('Operação desejada: ')
 
-match op:
-    case '+':
-        print(f'A soma é: {x + y}.')
-    case '-':
-        print(f'A subtração é: {x - y}.')
-    case '*':
-        print(f'A multiplicação é: {x * y}.')
-    case '/':
-        print(f'A divisão é: {x / y}.')
-    case '%':
-        print(f'O resto da disvisão é: {x % y}.')
-    case _:
-        print('Operação inválida')
-        continue
+    match op:
+        case '+':
+            print(f'A soma é: {x + y}.')
+        case '-':
+            print(f'A subtração é: {x - y}.')
+        case '*':
+            print(f'A multiplicação é: {x * y}.')
+        case '/':
+            print(f'A divisão é: {x / y}.')
+        case '%':
+            print(f'O resto da disvisão é: {x % y}.')
+        case _:
+            print('Operação inválida')
+            continue
 
+# pergunta para o usuário se deseja continuar ou encerrar
+continuar = input('Deseja continuar (s/n)? ')
+
+# verifica a opão do usuário
+if continuar == 's':
+    continue
+elif continuar == 'n':
+    break
+else:
+    print('Opção inválida')
