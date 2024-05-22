@@ -29,3 +29,7 @@ match op:
         print(f'A divisão é: {x / y}.')
     case '%':
         print(f'O resto da disvisão é: {x % y}.')
+    case _:
+        print('Operação inválida')
+        continue
+
